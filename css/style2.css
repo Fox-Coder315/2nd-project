@@ -5,95 +5,114 @@
 }
 
 body {
-    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
-    font-family: sans-serif;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 1.5rem;
-    margin-block-start: 0;
-    margin-block-end: 10px;
-  }
-  
-  h2 {
-    font-size: 2rem;
-  }
-  
-  .established {
-    font-style: italic;
-  }
-  
-  h1, h2, p {
-    text-align: center;
-  }
-  
-  .menu {
-    width: 80%;
-    background-color: burlywood;
-    margin-inline: auto;
-    padding: 30px;
-    max-width: 500px;
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: 'Arial, sans-serif';
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-block-start: 0;
+  margin-block-end: 10px;
+  color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.established {
+  font-style: italic;
+  color: #777;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: #f5deb3;
+  margin-inline: auto;
+  padding: 30px;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  display: block;
+  margin-inline: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  height: 4px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-block-start: 28px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.price {
+  text-align: end;
+  width: 25%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.address, .contact {
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  img {
-    display: block;
-    margin-inline: auto;
-  }
-
-  hr {
-    height: 4px;
-    background-color: brown;
-    border-color: brown;
-  }
-  
-  .bottom-line {
-    margin-block-start: 28px;
-  }
-  
-  h1, h2 {
-    font-family: Impact, serif;
-  }
-  
-  .item p {
-    display: inline-block;
-    margin-block: 10px;
-    font-size: 18px;
-  }
-  
-  .flavor, .dessert {
-    text-align: left;
-    width: 75%;
-  }
-  
   .price {
-    text-align: end;
-    width: 25%;
+    margin-top: 5px;
   }
-  
-  /* FOOTER */
-  
-  footer {
-    font-size: 1rem;
-  }
-  
-  .address {
-    margin-block-end: 10px;
-  }
-  
-  a {
-    color: black;
-  }
-  
-  a:visited {
-    color: black;
-  }
-  
-  a:hover {
-    color: brown;
-  }
-  
-  a:active {
-    color: brown;
-  }
-  
+}
